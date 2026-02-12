@@ -1,228 +1,248 @@
 <!-- index.html -->
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quantum computing</title>
+  <title>أبو راجح الرياشي | مهندس كيميائي</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="topbar">
     <nav class="nav">
-      <div class="nav-left">
-        <a class="home" href="#" aria-label="Home">⌂</a>
-        <span class="crumbs">
-          <a href="#">Quantum</a>
-          <span class="sep">›</span>
-          <a href="#">Qubit</a>
-        </span>
-      </div>
+      <a class="logo" href="#home">AR</a>
 
-      <div class="nav-right">
-        <a href="#history"># History</a>
-        <a href="#algorithms"># Algorithms</a>
-        <a href="#engineering"># Engineering</a>
-        <a href="#theory"># Theory</a>
+      <div class="nav-links">
+        <a href="#about">نبذة</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#education">التعليم</a>
+        <a href="#contact">التواصل</a>
       </div>
     </nav>
-    <div class="rule"></div>
   </header>
 
-  <main class="page">
+  <main class="container" id="home">
     <section class="hero">
-      <h1 class="title">Quantum computing</h1>
+      <div class="hero-right">
+        <p class="tag">مهندس كيميائي</p>
+        <h1 class="name">أبو راجح الرياشي</h1>
+        <p class="subtitle">
+          طالب في جامعة قطر، مهتم بتصميم العمليات وتحسين الأداء والسلامة الصناعية.
+          معروف بالذكاء، سرعة التعلّم، والدقة في حل المشكلات الهندسية.
+        </p>
 
-      <p class="lead">
-        A quantum computer is a computer that exploits quantum mechanical phenomena. At
-        small scales, physical matter exhibits properties of both particles and waves, and quantum
-        computing leverages this behavior using specialized hardware. Classical physics cannot
-        explain the operation of these quantum devices, and a scalable quantum computer could
-        perform some calculations exponentially faster than any modern “classical” computer. In
-        particular, a large-scale quantum computer could break widely-used encryption schemes
-        and aid physicists in performing physical simulations; however, the current state of the art
-        is still largely experimental and impractical.
-      </p>
-
-      <figure class="figure-card">
-        <div class="figure-inner">
-          <img src="2026img.png" alt="Quantum computer in a display case" />
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">تواصل معي</a>
+          <a class="btn ghost" href="#projects">شاهد الأعمال</a>
         </div>
-        <figcaption>
-          IBM Q System One, a quantum computer with 20 superconducting qubits
-        </figcaption>
-      </figure>
 
-      <div class="body-text">
-        <p>
-          The basic unit of information in quantum computing is the qubit, similar to the bit in
-          traditional digital electronics. Unlike a classical bit, a qubit can exist in a superposition of
-          its two “basis” states, which loosely means that it is in both states simultaneously. When
-          measuring a qubit, the result is a probabilistic output of a classical bit. If a quantum
-          computer manipulates the qubit in a particular way, wave interference effects can amplify
-          the desired measurement results. The design of quantum algorithms involves creating
-          procedures that allow a quantum computer to perform calculations efficiently.
-        </p>
+        <div class="quick-info">
+          <div class="info-card">
+            <p class="info-title">الدراسة</p>
+            <p class="info-value">جامعة قطر</p>
+          </div>
+          <div class="info-card">
+            <p class="info-title">الاهتمام</p>
+            <p class="info-value">عمليات + سلامة</p>
+          </div>
+          <div class="info-card">
+            <p class="info-title">الأسلوب</p>
+            <p class="info-value">ذكي ومنظّم</p>
+          </div>
+        </div>
+      </div>
 
-        <p>
-          Physically engineering high-quality qubits has proven challenging. If a physical qubit is
-          not sufficiently isolated from its environment, it suffers from quantum decoherence,
-          introducing noise into calculations. National governments have invested heavily in
-          experimental research that aims to develop scalable qubits with longer coherence times
-          and lower error rates. Two of the most promising technologies are superconductors
-          (which isolate an electrical current by eliminating electrical resistance) and ion traps
-          (which confine a single atomic particle using electromagnetic fields).
-        </p>
+      <div class="hero-left">
+        <div class="profile-card">
+          <div class="profile-media">
+            <img class="profile-img" src="2raj.jpeg" alt="صورة أبو راجح الرياشي" />
+          </div>
 
-        <p>
-          Any computational problem that can be solved by a classical computer can also be solved
-          by a quantum computer. Conversely, any problem that can be solved by a quantum
-          computer can also be solved by a classical computer, at least in principle given enough
-          time. In other words, quantum computers obey the Church–Turing thesis. This means
-          that while quantum computers provide no additional advantages over classical computers
-          in terms of computability, quantum algorithms for certain problems have significantly
-          lower time complexities than corresponding known classical algorithms.
-        </p>
+          <div class="profile-text">
+            <p class="profile-name">أبو راجح الرياشي</p>
+            <p class="profile-role">مهندس كيميائي · طالب جامعة قطر</p>
+            <p class="profile-note">
+              طموح ومحب للتحديات، يركز على فهم الأساسيات ثم تحويلها إلى حلول عملية.
+            </p>
+          </div>
+
+          <div class="profile-links">
+            <a href="#" title="أضف رابط لينكدإن">LinkedIn</a>
+            <a href="#" title="أضف رابط المشاريع">Portfolio</a>
+            <a href="#" title="أضف البريد الإلكتروني">Email</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="tri" id="history">
-      <div class="col">
-        <h2>History</h2>
-        <p>
-          For many years, the fields of quantum mechanics and computer science formed distinct
-          academic communities. Modern quantum theory developed in the 1920s to explain the
-          wave-particle duality observed at atomic scales, and digital computers emerged in the
-          following decades to replace human computers for tedious calculations.
-        </p>
-      </div>
+    <section class="section" id="about">
+      <h2 class="section-title">نبذة</h2>
 
-      <div class="col" id="algorithms">
-        <h2>Algorithms</h2>
-        <p>
-          Progress in finding quantum algorithms typically focuses on the quantum circuit model,
-          though exceptions like the quantum adiabatic algorithm exist. Quantum algorithms can be
-          roughly categorized by the type of speedup achieved over corresponding classical
-          algorithms.
-        </p>
-        <p>
-          Quantum algorithms that offer more than a polynomial speedup over the best-known
-          classical algorithm include Shor’s algorithm for factoring and the related quantum
-          algorithms for computing discrete logarithms.
-        </p>
-      </div>
-
-      <div class="col" id="engineering">
-        <h2>Engineering</h2>
-        <h3>Challenges</h3>
-        <p>
-          There are a number of technical challenges in building a large-scale quantum computer.
-          Physicist David DiVincenzo has listed these requirements for a practical quantum
-          computer:
-        </p>
-        <ul class="bullets">
-          <li>Physically scalable to increase the number of qubits</li>
-          <li>Qubits that can be initialized to arbitrary values</li>
-          <li>Quantum gates that are faster than decoherence time</li>
-          <li>Universal gate set</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="tri tri-tight">
-      <div class="col">
-        <p>
-          In 1980, Paul Benioff introduced the quantum Turing machine, which uses quantum
-          theory to describe a simplified computer. When digital computers became faster,
-          physicists faced an exponential increase in overhead when simulating quantum dynamics,
-          prompting Yuri Manin and Richard Feynman to suggest that quantum hardware might be
-          more efficient for simulation.
-        </p>
-      </div>
-
-      <div class="col">
-        <p>
-          These algorithms depend on primitives like the quantum Fourier transform. Certain
-          oracle problems like Simon’s problem and the Bernstein–Vazirani problem do give
-          provable speedups, though this is in the quantum query model and doesn’t necessarily
-          translate to practical speedups for real-world problems.
-        </p>
-      </div>
-
-      <div class="col">
-        <p>
-          The control of multi-qubit systems requires the generation and coordination of a large
-          number of electrical signals with tight and deterministic timing resolution. Scaling these
-          systems to support a growing number of qubits is an additional challenge.
-        </p>
-
-        <h3>Decoherence</h3>
-        <p>
-          One of the greatest challenges involved with constructing quantum computers is
-          controlling or removing quantum decoherence. This usually means isolating the system
-          from its environment as interactions with the external world cause the system to
-          decohere.
-        </p>
-      </div>
-    </section>
-
-    <section class="two">
-      <div class="col">
-        <h3>Quantum supremacy</h3>
-        <p>
-          Quantum supremacy is a term coined by John Preskill referring to the engineering feat of
-          demonstrating that a programmable quantum device can solve a problem beyond the
-          capabilities of state-of-the-art classical computers. The problem need not be useful, so
-          some view the test only as a potential future benchmark.
-        </p>
-      </div>
-
-      <div class="col">
-        <h3>Skepticism</h3>
-        <p>
-          Some researchers have expressed skepticism that scalable quantum computers could
-          ever be built, typically because of noise, error correction overhead, and the difficulty of
-          maintaining long coherence times in large systems.
-        </p>
-      </div>
-    </section>
-
-    <section class="theory" id="theory">
-      <h2>Theory</h2>
-
-      <div class="two">
-        <div class="col">
-          <h3>Computability</h3>
+      <div class="grid-2">
+        <div class="panel">
           <p>
-            Any computational problem solvable by a classical computer is also solvable by a
-            quantum computer. Intuitively, this is because it is believed that all physical phenomena,
-            including the operation of classical computers, can be described using quantum
-            mechanics, which underlies the operation of quantum computers.
+            أبو راجح الرياشي طالب في جامعة قطر، يدرس الهندسة الكيميائية ويملك طريقة تفكير تحليلية
+            تميّزه في فهم المفاهيم بسرعة وربطها بالتطبيقات الواقعية. يمتلك حسًا عاليًا بالمسؤولية
+            ويهتم بجودة العمل والتفاصيل.
           </p>
           <p>
-            Conversely, any problem solvable by a quantum computer is also solvable by a classical
-            computer, at least in principle given enough time.
+            يفضّل العمل ضمن فريق منظم، ويستمتع بقيادة المهام الصغيرة، وتقديم حلول ذكية وبسيطة
+            لمشكلات معقدة. كما يهتم بالاستدامة وتحسين الكفاءة وتقليل الهدر في الأنظمة الصناعية.
           </p>
         </div>
 
-        <div class="col">
-          <h3>Complexity</h3>
-          <p>
-            While quantum computers cannot solve any problems that classical computers cannot
-            already solve, it is suspected that they can solve certain problems faster than classical
-            computers. For instance, it is known that quantum computers can efficiently factor
-            integers, while this is not believed to be the case for classical computers.
+        <div class="panel">
+          <ul class="list">
+            <li><span>نقاط قوة:</span> ذكاء عملي، سرعة تعلّم، تفكير منطقي</li>
+            <li><span>شخصية العمل:</span> منظم، ملتزم بالمواعيد، يحب التطوير</li>
+            <li><span>اهتمامات هندسية:</span> تصميم عمليات، طاقة، سلامة، استدامة</li>
+            <li><span>لغة التواصل:</span> العربية والإنجليزية</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section-title">المهارات</h2>
+
+      <div class="skills">
+        <div class="skill">
+          <p class="skill-title">أساسيات الهندسة الكيميائية</p>
+          <ul>
+            <li>انتقال الكتلة والحرارة</li>
+            <li>الديناميكا الحرارية</li>
+            <li>مبادئ المفاعلات</li>
+            <li>مبادئ الموائع</li>
+          </ul>
+        </div>
+
+        <div class="skill">
+          <p class="skill-title">العمليات والسلامة</p>
+          <ul>
+            <li>قراءة مخططات PFD و P&amp;ID</li>
+            <li>مفاهيم HAZID / HAZOP</li>
+            <li>تفكير تقييم المخاطر</li>
+            <li>ثقافة سلامة واستجابة للمشاكل</li>
+          </ul>
+        </div>
+
+        <div class="skill">
+          <p class="skill-title">أدوات وبرامج</p>
+          <ul>
+            <li>Excel (تحليل وبيانات)</li>
+            <li>MATLAB / Python (حسابات)</li>
+            <li>Aspen (أساسيات محاكاة)</li>
+            <li>كتابة تقارير وعروض</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-title">المشاريع</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3 class="card-title">تحسين نموذج عملية</h3>
+          <p class="card-text">
+            ضبط متغيرات التشغيل للوصول لأداء أفضل، وتقليل استهلاك الطاقة مع الحفاظ على الاستقرار.
+          </p>
+          <div class="card-tags">
+            <span>Optimization</span><span>Modeling</span><span>Energy</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">تحليل مخاطر مبسط</h3>
+          <p class="card-text">
+            تحديد مخاطر محتملة واقتراح إجراءات تحكم بسيطة وواضحة تقلّل المخاطر على العاملين.
+          </p>
+          <div class="card-tags">
+            <span>Safety</span><span>Risk</span><span>HAZOP</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">مهمة تصميم حراري</h3>
+          <p class="card-text">
+            اختيار حل مناسب لمبادل حراري بناءً على القيود الحرارية والعملية، مع مقارنة مبسطة للحلول.
+          </p>
+          <div class="card-tags">
+            <span>Heat Transfer</span><span>Design</span><span>Equipment</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-title">التعليم</h2>
+
+      <div class="timeline">
+        <div class="time-item">
+          <p class="time-title">جامعة قطر</p>
+          <p class="time-sub">بكالوريوس الهندسة الكيميائية</p>
+          <p class="time-text">
+            مواد مرتبطة: الديناميكا الحرارية، انتقال الحرارة، انتقال الكتلة، سلامة العمليات.
           </p>
         </div>
+
+        <div class="time-item">
+          <p class="time-title">إنجازات جميلة</p>
+          <p class="time-sub">إضافة اختيارية</p>
+          <p class="time-text">
+            طالب ذكي وطموح، يهتم بالتطوير الذاتي، ويحب المشاركة في المشاريع والتعلّم من التجارب العملية.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">التواصل</h2>
+
+      <div class="grid-2">
+        <div class="panel">
+          <p>
+            إذا رغبت بالتواصل أو التعاون، أرسل رسالة من هنا أو عبر البريد.
+          </p>
+
+          <ul class="list">
+            <li><span>البريد:</span> yourname@email.com</li>
+            <li><span>الهاتف:</span> +000 0000 0000</li>
+            <li><span>الموقع:</span> الدوحة، قطر</li>
+          </ul>
+        </div>
+
+        <form class="panel form" onsubmit="event.preventDefault(); alert('تم إرسال الرسالة (تجربة)!');">
+          <label>
+            الاسم الكامل
+            <input type="text" placeholder="اسمك" required />
+          </label>
+
+          <label>
+            البريد الإلكتروني
+            <input type="email" placeholder="your@email.com" required />
+          </label>
+
+          <label>
+            الرسالة
+            <textarea rows="5" placeholder="اكتب رسالتك..." required></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">إرسال</button>
+        </form>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="rule"></div>
-      <p>© 2026 · Wikipedia</p>
+      <p>© <span id="year"></span> أبو راجح الرياشي · مهندس كيميائي</p>
     </footer>
   </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
